@@ -24,7 +24,7 @@ Estimated delivery time on Order Success screen
 TechnologyUsageKotlinPrimary languageXML LayoutsAll UI screensMVVM ArchitectureSeparation of UI and business logicViewModelHolds and manages UI-related dataLiveDataObserves data changes and updates UIRecyclerViewProduct list and Cart listViewBindingSafe view access without findViewById
 
 📂 Project Structure
-com.yourname.groceryapp/
+com.dibdroid.groceryapp/
 │
 ├── data/
 │   ├── model/
