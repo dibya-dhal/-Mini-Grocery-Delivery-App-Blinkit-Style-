@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/ivProduct"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/apple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/llProductInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@id/ivProduct"
+        app:layout_constraintEnd_toStartOf="@id/btnAdd"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    <TextView
+        android:id="@+id/tvProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apple"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_black"/>
+
+        <TextView
+            android:id="@+id/tvProductUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 kg"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/text_gray"/>
+
+        <TextView
+            android:id="@+id/tvProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹120"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_black"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <!-- 3. The Add Button (Yellow) -->
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#FFD54F"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.482" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

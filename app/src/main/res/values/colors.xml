@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+ <!-- OceanX / Blinkit Style Colors -->
+    <color name="primary_blue">#0047AB</color> <!-- The button clors -->
+    <color name="primary_green">#0C831F</color>
+    <color name="secondary_green">#E8F5E9</color>
+
+    <color name="text_black">#1C1C1C</color>
+    <color name="text_gray">#707070</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="border_gray">#E0E0E0</color>
+
+    <color name="success_green">#4CAF50</color>
+    <color name="error_red">#E53935</color>
+</resources>

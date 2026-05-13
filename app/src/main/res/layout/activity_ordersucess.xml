@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ivSuccess"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/check"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="80dp"/>
+
+
+    <!-- 2. Main Title -->
+    <TextView
+        android:id="@+id/tvSuccessTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Placed\nSuccessfully! 🎉"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/text_black"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/ivSuccess"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvSuccessSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your order has been placed and\nis on the way."
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="@color/text_gray"
+        android:layout_marginTop="18dp"
+        app:layout_constraintTop_toBottomOf="@id/tvSuccessTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 3. Order Details Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvOrderDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="2dp"
+        app:layout_constraintTop_toBottomOf="@id/tvSuccessSub">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order ID"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="@color/text_gray" />
+
+
+    <TextView
+        android:id="@+id/tvOrderId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#ORD123456"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/text_black"
+        android:layout_marginTop="4dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_marginVertical="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Estimated Delivery"
+        android:textSize="12sp"
+        android:textColor="@color/text_gray" />
+
+
+        <TextView
+            android:id="@+id/tvEstimatedTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today, 08:30 PM - 08:50 PM"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/text_black"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- 4. Final CTA Button -->
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Continue Shopping"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/primary_blue"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
